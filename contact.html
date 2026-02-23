@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Контакты — WonderTravel</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">🌍 WonderTravel</div>
+            <ul>
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="destinations.html">Направления</a></li>
+                <li><a href="gallery.html">Галерея</a></li>
+                <li><a href="contact.html" class="active">Контакты</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="page-hero">
+            <h1>Свяжитесь с нами</h1>
+            <p>Мы поможем спланировать ваше идеальное путешествие</p>
+        </section>
+        <section class="contact-section">
+            <div class="contact-info">
+                <div class="contact-item"><span>📍</span><div><h4>Адрес</h4><p>г. Москва, ул. Тверская, 10</p></div></div>
+                <div class="contact-item"><span>📞</span><div><h4>Телефон</h4><p>+7 (800) 555-01-23</p></div></div>
+                <div class="contact-item"><span>✉️</span><div><h4>Email</h4><p>info@wondertravel.ru</p></div></div>
+                <div class="contact-item"><span>🕐</span><div><h4>Режим работы</h4><p>Пн–Пт: 9:00–20:00<br>Сб–Вс: 10:00–18:00</p></div></div>
+            </div>
+            <form class="contact-form">
+                <h2>Отправить заявку</h2>
+                <input type="text" placeholder="Ваше имя" required>
+                <input type="email" placeholder="Email" required>
+                <input type="tel" placeholder="Телефон">
+                <select>
+                    <option>Выберите направление</option>
+                    <option>Париж</option><option>Рим</option>
+                    <option>Токио</option><option>Бали</option>
+                </select>
+                <textarea placeholder="Ваши пожелания..." rows="4"></textarea>
+                <button type="submit" class="btn">Отправить</button>
+            </form>
+        </section>
+    </main>
+    <footer><p>&copy; 2026 WonderTravel. Все права защищены.</p></footer>
+</body>
+</html>
