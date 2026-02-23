@@ -1,0 +1,71 @@
+/* ============================================
+   БАЗОВЫЕ СТИЛИ
+   ============================================ */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: 'Segoe UI', sans-serif; color: #333; }
+
+/* Шапка и навигация */
+header { background: #1a1a2e; padding: 1rem 2rem; position: sticky; top: 0; z-index: 100; }
+nav { display: flex; justify-content: space-between; align-items: center; max-width: 1200px; margin: 0 auto; }
+.logo { color: #fff; font-size: 1.5rem; font-weight: bold; }
+nav ul { list-style: none; display: flex; gap: 2rem; }
+nav ul a { color: #ccc; text-decoration: none; transition: color 0.3s; font-weight: 500; letter-spacing: 0.5px; }
+nav ul a:hover, nav ul a.active { color: #e94560; }
+
+/* Hero (главная страница) */
+.hero { background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%); color: white; text-align: center; padding: 6rem 2rem; }
+.hero h1 { font-size: 3rem; margin-bottom: 1rem; text-shadow: 2px 2px 8px rgba(0,0,0,0.4); }
+.hero p { font-size: 1.2rem; margin-bottom: 2rem; color: #aaa; }
+
+/* Кнопки */
+.btn { background: #e94560; color: white; padding: 0.9rem 2rem; border-radius: 30px; text-decoration: none; font-weight: bold; transition: transform 0.3s; box-shadow: 0 4px 15px rgba(233, 69, 96, 0.4); display: inline-block; border: none; cursor: pointer; }
+.btn:hover { transform: scale(1.05); }
+.btn-sm { padding: 0.5rem 1.2rem; font-size: 0.85rem; }
+
+/* Карточки преимуществ */
+.features { display: flex; gap: 2rem; padding: 4rem 2rem; max-width: 1200px; margin: 0 auto; }
+.feature-card { flex: 1; text-align: center; padding: 2rem; border-radius: 12px; box-shadow: 0 4px 20px rgba(0,0,0,0.08); background: linear-gradient(145deg, #ffffff, #f0f4ff); border-left: 4px solid #e94560; }
+.feature-card .icon { font-size: 3rem; display: block; margin-bottom: 1rem; }
+.feature-card h3 { margin-bottom: 0.5rem; color: #1a1a2e; font-size: 1.3rem; }
+
+/* Подвал */
+footer { background: #1a1a2e; color: #aaa; text-align: center; padding: 2rem; }
+
+/* ============================================
+   ОБЩИЕ СТИЛИ ДЛЯ ВНУТРЕННИХ СТРАНИЦ
+   ============================================ */
+.page-hero { background: linear-gradient(135deg, #1a1a2e, #0f3460); color: white; text-align: center; padding: 4rem 2rem; }
+.page-hero h1 { font-size: 2.5rem; margin-bottom: 0.5rem; }
+.page-hero p { color: #aaa; font-size: 1.1rem; }
+
+/* ============================================
+   СТРАНИЦА: НАПРАВЛЕНИЯ
+   ============================================ */
+.destinations-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 2rem; padding: 3rem 2rem; max-width: 1200px; margin: 0 auto; }
+.dest-card { border-radius: 12px; overflow: hidden; box-shadow: 0 4px 20px rgba(0,0,0,0.1); transition: transform 0.3s; }
+.dest-card:hover { transform: translateY(-5px); }
+.dest-img { height: 150px; display: flex; align-items: center; justify-content: center; font-size: 4rem; }
+.dest-info { padding: 1.5rem; }
+.dest-info h3 { margin-bottom: 0.5rem; }
+.dest-info p { color: #666; font-size: 0.9rem; margin-bottom: 1rem; }
+.price { font-weight: bold; color: #e94560; display: block; margin-bottom: 1rem; }
+
+/* ============================================
+   СТРАНИЦА: ГАЛЕРЕЯ
+   ============================================ */
+.gallery-grid { display: grid; grid-template-columns: repeat(4, 1fr); grid-auto-rows: 200px; gap: 1rem; padding: 3rem 2rem; max-width: 1200px; margin: 0 auto; }
+.gallery-item { border-radius: 12px; display: flex; align-items: flex-end; padding: 1rem; font-size: 1.2rem; font-weight: bold; color: white; text-shadow: 1px 1px 3px rgba(0,0,0,0.5); cursor: pointer; transition: transform 0.3s; }
+.gallery-item:hover { transform: scale(1.02); }
+.gallery-item.large { grid-column: span 2; }
+
+/* ============================================
+   СТРАНИЦА: КОНТАКТЫ
+   ============================================ */
+.contact-section { display: grid; grid-template-columns: 1fr 1.5fr; gap: 3rem; padding: 3rem 2rem; max-width: 1100px; margin: 0 auto; }
+.contact-item { display: flex; gap: 1rem; align-items: flex-start; margin-bottom: 2rem; font-size: 2rem; }
+.contact-item div h4 { margin-bottom: 0.3rem; color: #1a1a2e; }
+.contact-form h2 { margin-bottom: 1.5rem; }
+.contact-form input,
+.contact-form select,
+.contact-form textarea { width: 100%; padding: 0.8rem 1rem; margin-bottom: 1rem; border: 1px solid #ddd; border-radius: 8px; font-size: 1rem; font-family: 'Segoe UI', sans-serif; }
+.contact-form textarea { resize: vertical; }
